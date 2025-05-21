@@ -1,4 +1,4 @@
-# Applied Macroeconomic Modelling – A Crash Course on Climate Economics
+# A Crash Course on Climate Economics
 
 This repository accompanies the lecture **"A Crash Course on Climate Economics"**, covering both long-run integrated assessment models (IAMs) like DICE and short-run stochastic dynamic general equilibrium (DSGE) climate models.
 
