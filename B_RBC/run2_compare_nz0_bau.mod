@@ -1,5 +1,9 @@
 
-% add additional variables to simulations :
+% Transition versus Business As Usual
+% Deterministic (no shocks)
+% gauthier@vermandel.fr
+
+
 @#include 			"model_file.mod"
 % set-up the guess for given exo_filtered_ts
 [y_guess,oo_,M_]		    = EP_paths_init(oo_,M_,options_,exo_init_ts);
@@ -19,7 +23,7 @@
 % PLOT FIGURE
 nx = 3;ny = 3;varnames=char('y','c','h','d','tau_USD','E','T','M');
 nn=size(varnames,1);
-figure('Name','Figure 2: Model-implied projections based on alternative control rates of emissions');
+figure('Name','Figure 3: Comparison of transitions (deterministic)');
 for i1 =1:nn
 	subplot(nx,ny,i1)
 	idx = strmatch(deblank(varnames(i1,:)),M_.endo_names,'exact');

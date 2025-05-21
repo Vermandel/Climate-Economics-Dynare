@@ -94,12 +94,19 @@ gamma			= 2.379e-5;
 theta2			= 2.6;
 deltapb			= 1-(1-0.017)^(1/4);
 delta_M			= 0;
+xi_T  			= 0.0023;
 
 /* Panel B: Economics Parameters */ 
 LT				= 10.48;
 lg				= 0.025/4;
 GZ1				= 0.0072/4;
-GS1_400			= 0;
+rho_a 			= 0.95;
+sigmaC			= 1.94787;
+sigmaH			= 0.73685;
+varphi 			= 0;
+delta_SIG 		= 0.0033;
+GS1				= 0;
+beta			= 0.995;
 
 /* Panel C: Initial Conditions */ 
 Y0				= 30/4;
@@ -109,24 +116,12 @@ L0				= 4.85;
 M0				= 338*2.13-545;
 mu0				= 0.0001;
 h0				= 1;
-rr0_400			= 5;
-
-/* additional parameters */
 delthet0		= 1;
 y0          	= 1.0;
-
-/* Estimated parameters */ 
-rho_a 			= 0.95;
-sigmaC			= 1.94787;
-sigmaH			= 0.73685;
-varphi 			= 0*0.51509;
-
-delta_SIG 			= 0.0033;
-gZ0				= 0.0049;
 tau0 			= 0.0000;
-GS1				= 0;
-beta			= 0.995;
-xi_T  			= 0.0023;
+GS1_400			= 0;
+gZ0				= 0.0049;
+
 %----------------------------------------------------------------
 % 3. Model
 %----------------------------------------------------------------

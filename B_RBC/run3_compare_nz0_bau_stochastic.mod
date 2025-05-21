@@ -1,5 +1,10 @@
 
-% add additional variables to simulations :
+
+% Transition versus Business As Usual
+% Deterministic (with MIT shocks)
+% gauthier@vermandel.fr
+
+
 @#include 			"model_file.mod"
 
 % set-up the guess for given exo_filtered_ts
@@ -33,7 +38,7 @@ innovations_ts    = ds_leftmerge(innovations_ts,dseries(innovations,stochastic_d
 % PLOT FIGURE
 nx = 3;ny = 3;varnames=char('y','c','h','d','tau_USD','E','T','M');
 nn=size(varnames,1);
-figure('Name','Figure: Stochastic economy');
+figure('Name','Figure 4: Stochastic economy');
 for i1 =1:nn
 	subplot(nx,ny,i1)
 	idx = strmatch(deblank(varnames(i1,:)),M_.endo_names,'exact');
@@ -52,7 +57,7 @@ legend('Stochastic Path','Deterministic Path')
 % PLOT FIGURE
 nx = 3;ny = 3;varnames=char('y','c','h','d','tau_USD','E','T','M');
 nn=size(varnames,1);
-figure('Name','Figure: Stochastic economy');
+figure('Name','Figure 5: Stochastic economy');
 for i1 =1:nn
 	subplot(nx,ny,i1)
 	idx = strmatch(deblank(varnames(i1,:)),M_.endo_names,'exact');
